@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Payment Page</title>
+</head>
+<body>
+  <div class="payment-page">
+    <div class="payment-container">
+      <h2>Payment</h2>
+      <form>
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+        </div>
+        <div class="form-group">
+          <label for="expiry-date">Expiry Date</label>
+          <input type="text" id="expiry-date" placeholder="MM/YY">
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="password" id="cvv" placeholder="123">
+        </div>
+        <a href="/restaurants/payment/message"><button type="submit">Pay Now</button></a>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<style>
+    h2{
+        text-align: center;
+    }
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(https://media.istockphoto.com/id/1258733624/vector/herbs-and-spices-seamless-pattern-ginger-spinach-onion-pepper-garlic-fennel-packaging.jpg?s=612x612&w=0&k=20&c=6Fioel8Vz9YjpamIfhS68KzPhPfgPbcX5gs_6fJQPzQ=);
+
+}
+/* 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+} */
+
+.payment-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-shadow: rgb(0,0,0.3);
+}
+
+.payment-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  /* text-align: center; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding-right: 3.5%;
+
+}
+
+.payment-container h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.form-group {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #e5ce00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #b5a403;
+}
+
+    </style>
+</html>
